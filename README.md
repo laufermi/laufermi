@@ -6,3 +6,7 @@ Reference:
 - [The Tweleve-Factor App](https://12factor.net)
 - [Manifesto for Agile Software Development](https://agilemanifesto.org/iso/en/manifesto.html)
 - [CAP theorem](https://en.wikipedia.org/wiki/CAP_theorem)
+- [Continuous Delivery](https://martinfowler.com/bliki/ContinuousDelivery.html)
+- [Test Double](http://xunitpatterns.com/Test%20Double.html)
+- [Mocks Aren't Stubs](https://martinfowler.com/articles/mocksArentStubs.html)
+- [Enterprise Integration Using REST](https://martinfowler.com/articles/enterpriseREST.html)
