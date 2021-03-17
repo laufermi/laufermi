@@ -12,3 +12,4 @@ Reference:
 - [Enterprise Integration Using REST](https://martinfowler.com/articles/enterpriseREST.html)
 - [SLA vs. SLO vs. SLI](https://www.atlassian.com/incident-management/kpis/sla-vs-slo-vs-sli)
 - [Lean Value Tree](https://openpracticelibrary.com/practice/lean-value-tree/)
+- [Cynefin Framework](https://en.wikipedia.org/wiki/Cynefin_framework) 
