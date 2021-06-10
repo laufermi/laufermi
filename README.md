@@ -14,3 +14,4 @@ Reference:
 - [Lean Value Tree](https://openpracticelibrary.com/practice/lean-value-tree/)
 - [Cynefin Framework](https://en.wikipedia.org/wiki/Cynefin_framework) 
 - [Tunck Based Development](https://trunkbaseddevelopment.com/)
+- [Kubernetes Handbook](https://jimmysong.io/kubernetes-handbook/)
