@@ -1,0 +1,59 @@
+{
+    "info": {
+        "_postman_id": "0f1a9f8f-c0a8-46b4-968d-2e47b9bd9fca",
+        "name": "Public REST APIs",
+        "description": "This is a collection of different REST APIs that are completley public and do not require any authentication, making it easier for consumers to play with and understand what APIs are all about by seeing the many different ways in which APIs can be used.",
+        "schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+    },
+    "item": [{
+        "name": "APIs",
+        "item": [{
+            "name": "APIs.guru",
+            "item": [{
+                "name": "List API",
+                "id": "3b888b29-928c-4e15-a58f-9af1d2d213ae",
+                "request": {
+                    "method": "GET",
+                    "header": [],
+                    "url": "http://api.apis.guru/v2/list.json",
+                    "description": "List all of the APIs in the directory."
+                },
+                "response": []
+            }],
+            "id": "980848f3-7823-4abc-bf48-b652084173a8",
+            "description": "Wikipedia for Web APIs. Repository of API specs in OpenAPI(fka Swagger) 2.0 format."
+        }],
+        "id": "3c7a9494-314e-459f-a18f-f82170af9faa",
+        "description": "These are public API endpoints for APIs.",
+        "event": [{
+            "listen": "prerequest",
+            "script": {
+                "id": "e27806b5-e666-48b8-9c46-cfdda6e66afa",
+                "type": "text/javascript",
+                "exec": [""]
+            }
+        }, {
+            "listen": "test",
+            "script": {
+                "id": "fdb948fa-8077-4628-949a-0ed4becfba05",
+                "type": "text/javascript",
+                "exec": [""]
+            }
+        }]
+    }],
+    "event": [{
+        "listen": "prerequest",
+        "script": {
+            "id": "7c815166-6926-4788-8d39-701fa498384b",
+            "type": "text/javascript",
+            "exec": [""]
+        }
+    }, {
+        "listen": "test",
+        "script": {
+            "id": "b16c68a7-0010-4c8f-9e76-f1e2538dafda",
+            "type": "text/javascript",
+            "exec": [""]
+        }
+    }]
+}
