@@ -15,3 +15,4 @@ Reference:
 - [Cynefin Framework](https://en.wikipedia.org/wiki/Cynefin_framework) 
 - [Tunck Based Development](https://trunkbaseddevelopment.com/)
 - [Kubernetes Handbook](https://jimmysong.io/kubernetes-handbook/)
+- [MECE](https://en.wikipedia.org/wiki/MECE_principle)
