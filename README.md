@@ -16,3 +16,5 @@ Reference:
 - [Tunck Based Development](https://trunkbaseddevelopment.com/)
 - [Kubernetes Handbook](https://jimmysong.io/kubernetes-handbook/)
 - [MECE](https://en.wikipedia.org/wiki/MECE_principle)
+- [CNCF Landscape](https://landscape.cncf.io)
+- [Technology Radar](https://www.thoughtworks.com/radar)
