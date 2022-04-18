@@ -18,3 +18,7 @@ Reference:
 - [MECE](https://en.wikipedia.org/wiki/MECE_principle)
 - [CNCF Landscape](https://landscape.cncf.io)
 - [Technology Radar](https://www.thoughtworks.com/radar)
+- [Team Topologies](https://teamtopologies.com/key-concepts)
+- [Digital Platform Strategy](https://www.thoughtworks.com/what-we-do/enterprise-modernization-platforms-cloud/digital-platform-strategy)
+- [DevSecOps](https://www.devsecops.org)
+- [SAFE 5 CALMR](https://www.scaledagileframework.com/calmr/)
