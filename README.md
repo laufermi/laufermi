@@ -22,3 +22,5 @@ Reference:
 - [Digital Platform Strategy](https://www.thoughtworks.com/what-we-do/enterprise-modernization-platforms-cloud/digital-platform-strategy)
 - [DevSecOps](https://www.devsecops.org)
 - [SAFE 5 CALMR](https://www.scaledagileframework.com/calmr/)
+- [Platform Engineering](https://platformengineering.org/blog/what-is-platform-engineering)
+- [Building Infrastructure Platforms](https://martinfowler.com/articles/building-infrastructure-platform.html)
