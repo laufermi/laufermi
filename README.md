@@ -1,6 +1,6 @@
 🔔 Do one thing and do it well!
 
-![notai](imgs/Written-By-Human-Not-By-AI-Badge-white@2x.png)
+![notai](Written-By-Human-Not-By-AI-Badge-white@2x.png)
 
 Reference:
 - [Semantic Versioning 2.0.0](https://semver.org)
