@@ -1,7 +1,5 @@
 🔔 Do one thing and do it well!
 
-![notai](Written-By-Human-Not-By-AI-Badge-white@2x.png)
-
 ## Methodologies
 - [Manifesto for Agile Software Development](https://agilemanifesto.org/iso/en/manifesto.html)
 - [Continuous Delivery](https://martinfowler.com/bliki/ContinuousDelivery.html)
@@ -36,3 +34,5 @@
 - [Technology Radar](https://www.thoughtworks.com/radar)
 
 ## Others
+
+![notai](Written-By-Human-Not-By-AI-Badge-white@2x.png)
