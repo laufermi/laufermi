@@ -13,6 +13,7 @@
 - [Cynefin Framework](https://en.wikipedia.org/wiki/Cynefin_framework) 
 - [Tunck Based Development](https://trunkbaseddevelopment.com/)
 - [Team Topologies](https://teamtopologies.com/key-concepts)
+- [DORA DevOps Capabilities](https://dora.dev/devops-capabilities/technical/code-maintainability/)
 
 ## Principles
 - [Semantic Versioning 2.0.0](https://semver.org)
