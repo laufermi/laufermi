@@ -14,6 +14,7 @@
 - [Tunck Based Development](https://trunkbaseddevelopment.com/)
 - [Team Topologies](https://teamtopologies.com/key-concepts)
 - [DORA DevOps Capabilities](https://dora.dev/devops-capabilities/technical/code-maintainability/)
+- [Sensible Default Practices for Development](https://central.thoughtworks.net/home/ls/content/6700752033939456/about-us/our-craft/sensible-default-practices/software-dev-sdp)
 
 ## Principles
 - [Semantic Versioning 2.0.0](https://semver.org)
