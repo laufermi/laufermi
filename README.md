@@ -36,5 +36,11 @@
 - [Technology Radar](https://www.thoughtworks.com/radar)
 
 ## Others
+- [OAuth 2.0 Authorization Server Metadata](https://www.rfc-editor.org/rfc/rfc8414.html)
+- [OIDC](https://openid.net/developers/how-connect-works/)
+- [SAML2.0](http://docs.oasis-open.org/security/saml/Post2.0/sstc-saml-tech-overview-2.0.html)
+- [SCIM](https://scim.cloud/)
+- [Gartner Glossary](https://www.gartner.com/en/information-technology/glossary)
+
 
 ![notai](Written-By-Human-Not-By-AI-Badge-white@2x.png)
