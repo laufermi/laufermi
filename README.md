@@ -41,6 +41,8 @@
 - [SAML2.0](http://docs.oasis-open.org/security/saml/Post2.0/sstc-saml-tech-overview-2.0.html)
 - [SCIM](https://scim.cloud/)
 - [Gartner Glossary](https://www.gartner.com/en/information-technology/glossary)
+- [Backstage](https://backstage.io/)
+- [Getport](https://demo.getport.io/deployments)
 
 
 ![notai](Written-By-Human-Not-By-AI-Badge-white@2x.png)
