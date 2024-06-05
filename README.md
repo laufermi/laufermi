@@ -29,6 +29,7 @@
 ## Concepts
 - [CNCF Landscape](https://landscape.cncf.io)
 - [SLA vs. SLO vs. SLI](https://www.atlassian.com/incident-management/kpis/sla-vs-slo-vs-sli)
+- [OpenTelemotry](https://opentelemetry.io/docs/specs/otel/glossary/)
 
 ## Tools
 - [Lean Value Tree](https://openpracticelibrary.com/practice/lean-value-tree/)
@@ -43,6 +44,7 @@
 - [Gartner Glossary](https://www.gartner.com/en/information-technology/glossary)
 - [Backstage](https://backstage.io/)
 - [Getport](https://demo.getport.io/deployments)
+- [Structurizr](https://docs.structurizr.com/)
 
 
 ![notai](Written-By-Human-Not-By-AI-Badge-white@2x.png)
