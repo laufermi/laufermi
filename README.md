@@ -25,6 +25,7 @@
 - [Mocks Aren't Stubs](https://martinfowler.com/articles/mocksArentStubs.html)
 - [SOLID](https://en.wikipedia.org/wiki/SOLID)
 - [KISS](https://people.apache.org/~fhanik/kiss.html)
+- [Sensible Default Practies](https://central.thoughtworks.net/home/ls/content/5723877694373888/about-us/our-craft/sensible-default-practices)
 
 ## Concepts
 - [CNCF Landscape](https://landscape.cncf.io)
@@ -35,6 +36,7 @@
 - [Lean Value Tree](https://openpracticelibrary.com/practice/lean-value-tree/)
 - [Kubernetes Handbook](https://jimmysong.io/kubernetes-handbook/)
 - [Technology Radar](https://www.thoughtworks.com/radar)
+- [Lightweight RFC Process](https://cwiki.apache.org/confluence/display/GEODE/Lightweight+RFC+Process)
 
 ## Others
 - [OAuth 2.0 Authorization Server Metadata](https://www.rfc-editor.org/rfc/rfc8414.html)
@@ -45,6 +47,7 @@
 - [Backstage](https://backstage.io/)
 - [Getport](https://demo.getport.io/deployments)
 - [Structurizr](https://docs.structurizr.com/)
+- [Lean X in Y minutes](https://learnxinyminutes.com)
 
 
 ![notai](Written-By-Human-Not-By-AI-Badge-white@2x.png)
