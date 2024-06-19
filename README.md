@@ -25,6 +25,7 @@
 - [Mocks Aren't Stubs](https://martinfowler.com/articles/mocksArentStubs.html)
 - [SOLID](https://en.wikipedia.org/wiki/SOLID)
 - [KISS](https://people.apache.org/~fhanik/kiss.html)
+- [Sensible Default Practies](https://central.thoughtworks.net/home/ls/content/5723877694373888/about-us/our-craft/sensible-default-practices)
 
 ## Concepts
 - [CNCF Landscape](https://landscape.cncf.io)
