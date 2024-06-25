@@ -36,6 +36,7 @@
 - [Lean Value Tree](https://openpracticelibrary.com/practice/lean-value-tree/)
 - [Kubernetes Handbook](https://jimmysong.io/kubernetes-handbook/)
 - [Technology Radar](https://www.thoughtworks.com/radar)
+- [Lightweight RFC Process](https://cwiki.apache.org/confluence/display/GEODE/Lightweight+RFC+Process)
 
 ## Others
 - [OAuth 2.0 Authorization Server Metadata](https://www.rfc-editor.org/rfc/rfc8414.html)
