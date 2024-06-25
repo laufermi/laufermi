@@ -5,3 +5,14 @@
 * Domain Driven Design
 * Event Driven Architecture
 * Clean Architecture
+
+== Testing
+
+* Spock Framework
+* Arch Unit
+* Cucumber BDD
+* TDD
+
+== Engeering Practices
+
+* ?
