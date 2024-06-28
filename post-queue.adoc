@@ -15,4 +15,22 @@
 
 == Engeering Practices
 
-* ?
+== Development Guide
+
+* tech stack prepare
+** install development environment
+** create codebase repository
+* project init
+** dependencies
+** checkstyle
+** coverage
+* story tasking
+** follow ac
+* tdd senario 
+** assert
+* observability
+** tracing
+** logging
+** monitoring
+ 
+
