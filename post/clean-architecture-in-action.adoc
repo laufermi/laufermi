@@ -1,9 +1,9 @@
 [.blog-post]
 = 掌握Clean Architecture：微服务拆分与设计的终极指南
 
-:author: 技术博主
+:author: Write By AI
 :email: techblogger@example.com
-:revdate: 2023-07-26
+:revdate: 2024-07-26
 :doctype: article
 :encoding: utf-8
 :lang: zh
