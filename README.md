@@ -47,7 +47,7 @@
 - [Backstage](https://backstage.io/)
 - [Getport](https://demo.getport.io/deployments)
 - [Structurizr](https://docs.structurizr.com/)
-- [LeanXinYminutes](https://learnxinyminutes.com)
+- [Lean X in Y minutes](https://learnxinyminutes.com)
 
 
 ![notai](Written-By-Human-Not-By-AI-Badge-white@2x.png)
