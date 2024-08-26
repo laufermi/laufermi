@@ -1,1 +1,28 @@
+= SDK for sansec
+Author Name: laufermi
+v1.0.0, 2024-08-26
+
+:icons: font
+
+[TIP]
+KMS: http://sansec.com.cn
+
+== Support
+Java: 17+
+SpringBoot: 2.x+, 3.x+
+
+== Implement
+1. Load cert file
+2. Fetch token from KMS server
+3. Decrypt cyphertext
+
+== Q&A
+Q: Does the decryption module block service startup?
+A: Use toggle encryption-model: FORCE
+
+
+
+
+
+
 
