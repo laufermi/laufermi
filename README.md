@@ -27,6 +27,7 @@
 - [KISS](https://people.apache.org/~fhanik/kiss.html)
 - [Sensible Default Practies](https://central.thoughtworks.net/home/ls/content/5723877694373888/about-us/our-craft/sensible-default-practices)
 
+
 ## Concepts
 - [CNCF Landscape](https://landscape.cncf.io)
 - [SLA vs. SLO vs. SLI](https://www.atlassian.com/incident-management/kpis/sla-vs-slo-vs-sli)
@@ -37,6 +38,8 @@
 - [Kubernetes Handbook](https://jimmysong.io/kubernetes-handbook/)
 - [Technology Radar](https://www.thoughtworks.com/radar)
 - [Lightweight RFC Process](https://cwiki.apache.org/confluence/display/GEODE/Lightweight+RFC+Process)
+- [CloudEvents](https://cloudevents.io)
+- [KEDA-Kubernetes Event-driven Autoscaling](https://keda.sh)
 
 ## Others
 - [OAuth 2.0 Authorization Server Metadata](https://www.rfc-editor.org/rfc/rfc8414.html)
