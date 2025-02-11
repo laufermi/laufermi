@@ -1,13 +1,18 @@
 # Development Environment
 
+## Python
 
+```bash
+
+
+```
 
 ## Terminal
 
-### Brew
+### HomeBrew
 
 ```bash
-brew list                                                                                                                                                                  node system
+brew list
 ==> Formulae
 autoconf		gh			libarchive		libxau			maven			pixman			rpm
 autojump		giflib			libb2			libxcb			mpdecimal		pkgconf			sqlite
@@ -25,11 +30,18 @@ appcleaner		bruno			figma			google-chrome		microsoft-auto-update	microsoft-teams
 bilibili		fbreader		follow			iterm2			microsoft-office	mweb-pro		zoom
 ```
 
+### Theme
+
+```bash
+p10k configure
+```
+
 ### Alias
 
 ```bash
 vi ~/.zshrc
 
-# Update Oh My Zsh, Homebrew
-export up='omz update && brew upgrade && brew list --cask | xargs brew upgrade --cask && brew cleanup'
+alias bcup="brew list --cask | xargs brew upgrade --cask"
+alias gwcc="./gradlew clean check"
+alias up="omz update && brew upgrade && brew list --cask | xargs brew upgrade --cask && brew cleanup"
 ```
