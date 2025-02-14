@@ -52,6 +52,7 @@
 - [Getport](https://demo.getport.io/deployments)
 - [Structurizr](https://docs.structurizr.com/)
 - [Lean X in Y minutes](https://learnxinyminutes.com)
+- [SSOT/SPOT](https://en.wikipedia.org/wiki/Single_source_of_truth)
 
 
 ![notai](Written-By-Human-Not-By-AI-Badge-white@2x.png)
