@@ -1,63 +1,60 @@
-🔔 Do one thing and do it well!
+# FM6MHZ
 
-[TOC]
+Simply shaped, deeply made
 
-## Methodologies
-- [Manifesto for Agile Software Development](https://agilemanifesto.org/iso/en/manifesto.html)
-- [Continuous Delivery](https://martinfowler.com/bliki/ContinuousDelivery.html)
-- [Enterprise Integration Using REST](https://martinfowler.com/articles/enterpriseREST.html)
-- [TOGAF](https://www.opengroup.org/togaf)
-- [Digital Platform Strategy](https://www.thoughtworks.com/what-we-do/enterprise-modernization-platforms-cloud/digital-platform-strategy)
-- [DevSecOps](https://www.devsecops.org)
-- [Platform Engineering](https://platformengineering.org/blog/what-is-platform-engineering)
-- [Building Infrastructure Platforms](https://martinfowler.com/articles/building-infrastructure-platform.html)
-- [SAFE 5 CALMR](https://www.scaledagileframework.com/calmr/)
-- [Cynefin Framework](https://en.wikipedia.org/wiki/Cynefin_framework) 
-- [Tunck Based Development](https://trunkbaseddevelopment.com/)
-- [Team Topologies](https://teamtopologies.com/key-concepts)
-- [DORA DevOps Capabilities](https://dora.dev/devops-capabilities/technical/code-maintainability/)
-- [Sensible Default Practices for Development](https://central.thoughtworks.net/home/ls/content/6700752033939456/about-us/our-craft/sensible-default-practices/software-dev-sdp)
-- [DDD architecture](https://herbertograca.com/2017/11/16/explicit-architecture-01-ddd-hexagonal-onion-clean-cqrs-how-i-put-it-all-together/)
+A static Astro personal website at **https://www.fm6mhz.com/**. The site includes a homepage, Markdown article collection, searchable resources, RSS, a sitemap, and a custom 404 page. Cloudflare manages DNS; GitHub Pages hosts the generated site and manages HTTPS.
 
-## Principles
-- [Semantic Versioning 2.0.0](https://semver.org)
-- [The Tweleve-Factor App](https://12factor.net)
-- [CAP theorem](https://en.wikipedia.org/wiki/CAP_theorem)
-- [MECE](https://en.wikipedia.org/wiki/MECE_principle)
-- [Test Double](http://xunitpatterns.com/Test%20Double.html)
-- [Mocks Aren't Stubs](https://martinfowler.com/articles/mocksArentStubs.html)
-- [SOLID](https://en.wikipedia.org/wiki/SOLID)
-- [KISS](https://people.apache.org/~fhanik/kiss.html)
-- [Sensible Default Practies](https://central.thoughtworks.net/home/ls/content/5723877694373888/about-us/our-craft/sensible-default-practices)
-- [Domain Storytelling](https://domainstorytelling.org)
+## Local development
 
+Use Node.js 24 (minimum 22.12) and npm.
 
-## Concepts
-- [CNCF Landscape](https://landscape.cncf.io)
-- [SLA vs. SLO vs. SLI](https://www.atlassian.com/incident-management/kpis/sla-vs-slo-vs-sli)
-- [OpenTelemotry](https://opentelemetry.io/docs/specs/otel/glossary/)
+```sh
+npm ci
+npm run dev
+```
 
-## Tools
-- [Lean Value Tree](https://openpracticelibrary.com/practice/lean-value-tree/)
-- [Kubernetes Handbook](https://jimmysong.io/kubernetes-handbook/)
-- [Technology Radar](https://www.thoughtworks.com/radar)
-- [Lightweight RFC Process](https://cwiki.apache.org/confluence/display/GEODE/Lightweight+RFC+Process)
-- [CloudEvents](https://cloudevents.io)
-- [KEDA-Kubernetes Event-driven Autoscaling](https://keda.sh)
-- [DDD Hexagonal Onion Clean](https://herbertograca.com/2017/11/16/explicit-architecture-01-ddd-hexagonal-onion-clean-cqrs-how-i-put-it-all-together/)
+Open http://localhost:4321. Before publishing, run:
 
-## Others
-- [OAuth 2.0 Authorization Server Metadata](https://www.rfc-editor.org/rfc/rfc8414.html)
-- [OIDC](https://openid.net/developers/how-connect-works/)
-- [SAML2.0](http://docs.oasis-open.org/security/saml/Post2.0/sstc-saml-tech-overview-2.0.html)
-- [SCIM](https://scim.cloud/)
-- [Gartner Glossary](https://www.gartner.com/en/information-technology/glossary)
-- [Backstage](https://backstage.io/)
-- [Getport](https://demo.getport.io/deployments)
-- [Structurizr](https://docs.structurizr.com/)
-- [Lean X in Y minutes](https://learnxinyminutes.com)
-- [SSOT/SPOT](https://en.wikipedia.org/wiki/Single_source_of_truth)
+```sh
+npm run check
+npm run build
+npm test
+npm run preview
+```
 
+The tests inspect generated links and HTTPS metadata, compare retained downloads byte for byte, and build temporary articles to verify publication, draft exclusion, future-date exclusion, Markdown rendering, and RSS/sitemap inclusion. They remove their fixtures and rebuild the real site before exiting. Run tests in a clean checkout, not alongside another build.
 
-![notai](Written-By-Human-Not-By-AI-Badge-white@2x.png)
+## Write an article
 
+Create `src/content/articles/your-article.md`. Its filename becomes `/articles/your-article/`; keep it stable after publication.
+
+```yaml
+---
+title: "Your article title"
+description: "A short summary for the article list and search engines."
+date: 2026-09-14
+tags: [Architecture]
+draft: true
+---
+```
+
+Write the body in Markdown below the front matter. The included `first-article.md` is an unpublished authoring example. Replace its content before publishing. Set `draft: false` only when ready. Drafts are excluded from routes, homepage, article index, RSS, and sitemap, including in development. A future date also excludes the article until a build on or after that date; there is no automatic scheduled rebuild. Dates are displayed in UTC. To preview an article locally, temporarily set a current/past date and `draft: false`, then restore the draft flag before committing if it should remain unpublished. Draft source is still visible in this public repository.
+
+## Content and design
+
+`src/data/resources.json` contains all 45 migrated links. `src/styles/global.css` defines the editorial typography, ivory background, olive accents, and responsive layouts. `src/layouts/Base.astro` owns shared navigation and metadata. The generated visual reference and implementation notes are in `docs/design/`.
+
+The original README is retained at `docs/original-resources.md`. Existing root files remain in place; their public copies preserve download URLs. When updating a retained file, update both copies; migration tests detect drift. The old `/privacy.html` URL leads to `/privacy/`, and `/privacy.md` remains downloadable. The existing application privacy policy is preserved verbatim, including its unfinished contact and date fields; it is not presented as a new website policy. Internal Thoughtworks resources are marked as requiring access. External link availability has not been comprehensively audited.
+
+## GitHub Pages migration
+
+The deployment workflow is prepared but the live site is not migrated by local development.
+
+1. Review and merge the Astro changes into `main` when ready to publish.
+2. In repository **Settings → Pages → Build and deployment**, change Source to **GitHub Actions**. Keep custom domain `www.fm6mhz.com` and **Enforce HTTPS** enabled.
+3. Run **Validate and deploy Astro** from Actions if the merge-triggered run occurred before the Pages setting changed.
+4. Confirm the deployment succeeds, then check HTTPS homepage, `/articles/`, `/resources/`, `/privacy.html`, `/global.m3u`, and `/rss.xml`.
+
+The workflow validates pull requests without publishing. Pushes to `main` and manual runs on `main` deploy only after checks and tests pass. It uploads `dist/`; no server adapter is needed. `site` is the HTTPS custom domain and there is no repository-name base path. GitHub Actions deployments use the custom domain stored in Pages settings; the retained CNAME is not relied on for Actions routing. Changing publication mode can temporarily affect the existing site, so perform the settings change together with the first deployment.
+
+To roll back, revert the migration commit and restore Pages publishing from `main` at `/`, preserving the custom domain and HTTPS settings.

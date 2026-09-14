@@ -1,0 +1,16 @@
+---
+import type { CollectionEntry } from 'astro:content';
+import { formatDate } from '../data/articles';
+import Arrow from './Arrow.astro';
+interface Props { articles: CollectionEntry<'articles'>[] }
+const { articles } = Astro.props;
+---
+<ol class="article-list">
+  {articles.map(({ id, data }) => <li>
+    <a href={`/articles/${id}/`}>
+      <div class="article-meta"><time datetime={data.date.toISOString()}>{formatDate(data.date)}</time>{data.tags.length > 0 && <span>{data.tags.join(' / ')}</span>}</div>
+      <div class="row-title"><h2>{data.title}</h2><Arrow /></div>
+      <p>{data.description}</p>
+    </a>
+  </li>)}
+</ol>

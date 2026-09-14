@@ -1,0 +1,26 @@
+---
+import Base from '../layouts/Base.astro';
+import Arrow from '../components/Arrow.astro';
+import ArticleList from '../components/ArticleList.astro';
+import { publishedArticles } from '../data/articles';
+const articles = await publishedArticles();
+---
+<Base>
+  <section class="hero">
+    <h1>Do one thing<br /><em>and do it well.</em></h1>
+    <div class="hero-aside"><p>A personal space for software architecture, engineering practices, and things worth keeping.</p><a class="text-link" href="/resources/">Explore the resources <Arrow diagonal /></a></div>
+  </section>
+  <section class="numbered-section" aria-labelledby="articles-heading">
+    <p class="section-label">01 / Articles</p>
+    <div class="section-body">
+      <div class="section-heading"><h2 id="articles-heading">{articles.length ? 'Recent writing.' : 'Room for the next idea.'}</h2><a class="text-link" href="/articles/">All articles <Arrow diagonal /></a></div>
+      {articles.length ? <ArticleList articles={articles.slice(0, 3)} /> : <p class="empty-copy">No articles published yet. In the meantime, explore the reading collection.</p>}
+    </div>
+  </section>
+  <section class="numbered-section resources-preview" aria-labelledby="resources-heading">
+    <p class="section-label">02 / Resources</p>
+    <div class="section-body"><h2 id="resources-heading">A collection worth returning to.</h2>
+      <ul class="category-list">{['Methodologies', 'Principles', 'Tools'].map(title => <li><a href={`/resources/#${title.toLowerCase()}`}><span>{title}</span><Arrow /></a></li>)}</ul>
+    </div>
+  </section>
+</Base>

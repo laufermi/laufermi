@@ -1,0 +1,2 @@
+import type { APIRoute } from 'astro';
+export const GET: APIRoute = () => new Response('<!doctype html><html lang="en"><head><meta charset="utf-8"><meta http-equiv="refresh" content="0;url=/privacy/"><link rel="canonical" href="https://www.fm6mhz.com/privacy/"><title>Privacy policy</title></head><body><a href="/privacy/">Continue to the privacy policy</a></body></html>', { headers: { 'Content-Type': 'text/html; charset=utf-8' } });

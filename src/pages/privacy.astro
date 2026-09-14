@@ -1,0 +1,8 @@
+---
+import Base from '../layouts/Base.astro';
+import { marked } from 'marked';
+import privacy from '../../privacy.md?raw';
+// Preserve the existing application's policy verbatim, including its unfinished fields.
+const html = await marked(privacy);
+---
+<Base title="Privacy policy" noindex><div class="prose standalone-prose" set:html={html} /></Base>

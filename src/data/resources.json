@@ -1,0 +1,257 @@
+[
+  {
+    "title": "Methodologies",
+    "id": "methodologies",
+    "links": [
+      {
+        "title": "Manifesto for Agile Software Development",
+        "url": "https://agilemanifesto.org/iso/en/manifesto.html",
+        "restricted": false
+      },
+      {
+        "title": "Continuous Delivery",
+        "url": "https://martinfowler.com/bliki/ContinuousDelivery.html",
+        "restricted": false
+      },
+      {
+        "title": "Enterprise Integration Using REST",
+        "url": "https://martinfowler.com/articles/enterpriseREST.html",
+        "restricted": false
+      },
+      {
+        "title": "TOGAF",
+        "url": "https://www.opengroup.org/togaf",
+        "restricted": false
+      },
+      {
+        "title": "Digital Platform Strategy",
+        "url": "https://www.thoughtworks.com/what-we-do/enterprise-modernization-platforms-cloud/digital-platform-strategy",
+        "restricted": false
+      },
+      {
+        "title": "DevSecOps",
+        "url": "https://www.devsecops.org",
+        "restricted": false
+      },
+      {
+        "title": "Platform Engineering",
+        "url": "https://platformengineering.org/blog/what-is-platform-engineering",
+        "restricted": false
+      },
+      {
+        "title": "Building Infrastructure Platforms",
+        "url": "https://martinfowler.com/articles/building-infrastructure-platform.html",
+        "restricted": false
+      },
+      {
+        "title": "SAFE 5 CALMR",
+        "url": "https://www.scaledagileframework.com/calmr/",
+        "restricted": false
+      },
+      {
+        "title": "Cynefin Framework",
+        "url": "https://en.wikipedia.org/wiki/Cynefin_framework",
+        "restricted": false
+      },
+      {
+        "title": "Trunk Based Development",
+        "url": "https://trunkbaseddevelopment.com/",
+        "restricted": false
+      },
+      {
+        "title": "Team Topologies",
+        "url": "https://teamtopologies.com/key-concepts",
+        "restricted": false
+      },
+      {
+        "title": "DORA DevOps Capabilities",
+        "url": "https://dora.dev/devops-capabilities/technical/code-maintainability/",
+        "restricted": false
+      },
+      {
+        "title": "Sensible Default Practices for Development",
+        "url": "https://central.thoughtworks.net/home/ls/content/6700752033939456/about-us/our-craft/sensible-default-practices/software-dev-sdp",
+        "restricted": true
+      },
+      {
+        "title": "DDD architecture",
+        "url": "https://herbertograca.com/2017/11/16/explicit-architecture-01-ddd-hexagonal-onion-clean-cqrs-how-i-put-it-all-together/",
+        "restricted": false
+      }
+    ]
+  },
+  {
+    "title": "Principles",
+    "id": "principles",
+    "links": [
+      {
+        "title": "Semantic Versioning 2.0.0",
+        "url": "https://semver.org",
+        "restricted": false
+      },
+      {
+        "title": "The Twelve-Factor App",
+        "url": "https://12factor.net",
+        "restricted": false
+      },
+      {
+        "title": "CAP theorem",
+        "url": "https://en.wikipedia.org/wiki/CAP_theorem",
+        "restricted": false
+      },
+      {
+        "title": "MECE",
+        "url": "https://en.wikipedia.org/wiki/MECE_principle",
+        "restricted": false
+      },
+      {
+        "title": "Test Double",
+        "url": "http://xunitpatterns.com/Test%20Double.html",
+        "restricted": false
+      },
+      {
+        "title": "Mocks Aren't Stubs",
+        "url": "https://martinfowler.com/articles/mocksArentStubs.html",
+        "restricted": false
+      },
+      {
+        "title": "SOLID",
+        "url": "https://en.wikipedia.org/wiki/SOLID",
+        "restricted": false
+      },
+      {
+        "title": "KISS",
+        "url": "https://people.apache.org/~fhanik/kiss.html",
+        "restricted": false
+      },
+      {
+        "title": "Sensible Default Practices",
+        "url": "https://central.thoughtworks.net/home/ls/content/5723877694373888/about-us/our-craft/sensible-default-practices",
+        "restricted": true
+      },
+      {
+        "title": "Domain Storytelling",
+        "url": "https://domainstorytelling.org",
+        "restricted": false
+      }
+    ]
+  },
+  {
+    "title": "Concepts",
+    "id": "concepts",
+    "links": [
+      {
+        "title": "CNCF Landscape",
+        "url": "https://landscape.cncf.io",
+        "restricted": false
+      },
+      {
+        "title": "SLA vs. SLO vs. SLI",
+        "url": "https://www.atlassian.com/incident-management/kpis/sla-vs-slo-vs-sli",
+        "restricted": false
+      },
+      {
+        "title": "OpenTelemetry",
+        "url": "https://opentelemetry.io/docs/specs/otel/glossary/",
+        "restricted": false
+      }
+    ]
+  },
+  {
+    "title": "Tools",
+    "id": "tools",
+    "links": [
+      {
+        "title": "Lean Value Tree",
+        "url": "https://openpracticelibrary.com/practice/lean-value-tree/",
+        "restricted": false
+      },
+      {
+        "title": "Kubernetes Handbook",
+        "url": "https://jimmysong.io/kubernetes-handbook/",
+        "restricted": false
+      },
+      {
+        "title": "Technology Radar",
+        "url": "https://www.thoughtworks.com/radar",
+        "restricted": false
+      },
+      {
+        "title": "Lightweight RFC Process",
+        "url": "https://cwiki.apache.org/confluence/display/GEODE/Lightweight+RFC+Process",
+        "restricted": false
+      },
+      {
+        "title": "CloudEvents",
+        "url": "https://cloudevents.io",
+        "restricted": false
+      },
+      {
+        "title": "KEDA-Kubernetes Event-driven Autoscaling",
+        "url": "https://keda.sh",
+        "restricted": false
+      },
+      {
+        "title": "DDD Hexagonal Onion Clean",
+        "url": "https://herbertograca.com/2017/11/16/explicit-architecture-01-ddd-hexagonal-onion-clean-cqrs-how-i-put-it-all-together/",
+        "restricted": false
+      }
+    ]
+  },
+  {
+    "title": "Others",
+    "id": "others",
+    "links": [
+      {
+        "title": "OAuth 2.0 Authorization Server Metadata",
+        "url": "https://www.rfc-editor.org/rfc/rfc8414.html",
+        "restricted": false
+      },
+      {
+        "title": "OIDC",
+        "url": "https://openid.net/developers/how-connect-works/",
+        "restricted": false
+      },
+      {
+        "title": "SAML2.0",
+        "url": "http://docs.oasis-open.org/security/saml/Post2.0/sstc-saml-tech-overview-2.0.html",
+        "restricted": false
+      },
+      {
+        "title": "SCIM",
+        "url": "https://scim.cloud/",
+        "restricted": false
+      },
+      {
+        "title": "Gartner Glossary",
+        "url": "https://www.gartner.com/en/information-technology/glossary",
+        "restricted": false
+      },
+      {
+        "title": "Backstage",
+        "url": "https://backstage.io/",
+        "restricted": false
+      },
+      {
+        "title": "Getport",
+        "url": "https://demo.getport.io/deployments",
+        "restricted": false
+      },
+      {
+        "title": "Structurizr",
+        "url": "https://docs.structurizr.com/",
+        "restricted": false
+      },
+      {
+        "title": "Learn X in Y minutes",
+        "url": "https://learnxinyminutes.com",
+        "restricted": false
+      },
+      {
+        "title": "SSOT/SPOT",
+        "url": "https://en.wikipedia.org/wiki/Single_source_of_truth",
+        "restricted": false
+      }
+    ]
+  }
+]

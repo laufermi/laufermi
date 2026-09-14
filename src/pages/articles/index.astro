@@ -1,0 +1,11 @@
+---
+import Base from '../../layouts/Base.astro';
+import ArticleList from '../../components/ArticleList.astro';
+import Arrow from '../../components/Arrow.astro';
+import { publishedArticles } from '../../data/articles';
+const articles = await publishedArticles();
+---
+<Base title="Articles" description="Writing on software architecture and engineering practices.">
+  <header class="page-intro"><h1>Articles.</h1><p>Software architecture, engineering practices, and the ideas behind them.</p></header>
+  {articles.length ? <ArticleList articles={articles} /> : <section class="empty-state"><p class="section-label">The notebook</p><div><h2>Room for the next idea.</h2><p>No articles published yet. In the meantime, explore the reading collection.</p><a class="text-link" href="/resources/">Explore the resources <Arrow diagonal /></a></div></section>}
+</Base>

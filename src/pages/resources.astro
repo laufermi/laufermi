@@ -1,0 +1,36 @@
+---
+import Base from '../layouts/Base.astro';
+import Arrow from '../components/Arrow.astro';
+import groups from '../data/resources.json';
+const count = groups.reduce((total, group) => total + group.links.length, 0);
+---
+<Base title="Resources" description="A curated reading collection on architecture, engineering, methodologies, and tools.">
+  <header class="page-intro"><h1>Things worth keeping.</h1><p>A reading collection on software, systems, and the way we work.</p></header>
+  <div class="resource-toolbar"><label for="resource-search">Find a resource<input id="resource-search" type="search" placeholder="Search titles, topics, or websites…" /></label><p id="resource-count" role="status" aria-live="polite">{count} resources</p></div>
+  <div class="resource-layout">
+    <nav class="category-nav" aria-label="Resource categories">{groups.map(group => <a href={`#${group.id}`}>{group.title} <span>{group.links.length}</span></a>)}</nav>
+    <div class="resource-groups">
+      {groups.map(group => <section id={group.id} class="resource-group"><h2>{group.title}</h2><ul>{group.links.map(link => <li data-resource data-search={`${link.title} ${link.url} ${group.title}`.toLowerCase()}><a href={link.url}><div><span class="resource-title">{link.title}</span><span class="resource-domain">{new URL(link.url).hostname}{link.restricted ? ' · Internal access required' : ''}</span></div><Arrow diagonal /></a></li>)}</ul></section>)}
+      <p id="no-results" class="no-results" hidden>No resources match your search. Try a broader term.</p>
+    </div>
+  </div>
+</Base>
+<script>
+  const input = document.querySelector<HTMLInputElement>('#resource-search')!;
+  const rows = Array.from(document.querySelectorAll<HTMLElement>('[data-resource]'));
+  const groups = Array.from(document.querySelectorAll<HTMLElement>('.resource-group'));
+  const status = document.querySelector('#resource-count')!;
+  const empty = document.querySelector<HTMLElement>('#no-results')!;
+  input.addEventListener('input', () => {
+    const terms = input.value.toLowerCase().trim().split(/\s+/).filter(Boolean);
+    let count = 0;
+    rows.forEach(row => { row.hidden = !terms.every(term => row.dataset.search!.includes(term)); if (!row.hidden) count++; });
+    groups.forEach(group => { group.hidden = !group.querySelector('[data-resource]:not([hidden])'); });
+    document.querySelectorAll<HTMLAnchorElement>('.category-nav a').forEach(link => {
+      const group = document.getElementById(link.hash.slice(1));
+      link.hidden = group?.hidden ?? false;
+    });
+    status.textContent = `${count} resource${count === 1 ? '' : 's'}`;
+    empty.hidden = count > 0;
+  });
+</script>

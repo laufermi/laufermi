@@ -1,0 +1,47 @@
+---
+import '../styles/global.css';
+import Arrow from '../components/Arrow.astro';
+interface Props { title?: string; description?: string; noindex?: boolean; article?: boolean }
+const { title, description = 'A personal space for software architecture, engineering practices, and things worth keeping.', noindex = false, article = false } = Astro.props;
+const fullTitle = title ? `${title} — FM6MHZ` : 'FM6MHZ';
+const canonical = new URL(Astro.url.pathname, Astro.site);
+const nav = [{ label: 'Home', href: '/' }, { label: 'Articles', href: '/articles/' }, { label: 'Resources', href: '/resources/' }];
+---
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content={description} />
+    <meta name="theme-color" content="#f6f5f0" />
+    {noindex && <meta name="robots" content="noindex" />}
+    <title>{fullTitle}</title>
+    <link rel="canonical" href={canonical} />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="alternate" type="application/rss+xml" title="FM6MHZ Articles" href="/rss.xml" />
+    <meta property="og:title" content={fullTitle} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={canonical} />
+    <meta property="og:type" content={article ? 'article' : 'website'} />
+    <meta property="og:site_name" content="FM6MHZ" />
+    <meta name="twitter:card" content="summary" />
+    <slot name="head" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <div class="shell">
+      <header class="site-header">
+        <a class="wordmark" href="/" aria-label="FM6MHZ home"><span class="brand-icon" aria-hidden="true">📻</span><span class="wordmark-band">FM</span><span>6MHZ</span></a>
+        <nav aria-label="Main navigation">
+          {nav.map(({ label, href }) => <a href={href} aria-current={(href === '/' ? Astro.url.pathname === '/' : Astro.url.pathname.startsWith(href)) ? 'page' : undefined}>{label}</a>)}
+          <a href="https://github.com/laufermi" class="with-arrow">GitHub <Arrow diagonal /></a>
+        </nav>
+      </header>
+      <main id="main"><slot /></main>
+      <footer class="site-footer">
+        <div><a class="footer-name" href="/" aria-label="FM6MHZ home"><span class="brand-icon" aria-hidden="true">📻</span>FM6MHZ</a><p>Simply shaped, deeply made</p></div>
+        <nav aria-label="Footer"><a href="https://github.com/laufermi">GitHub</a><a href="/rss.xml">RSS</a></nav>
+      </footer>
+    </div>
+  </body>
+</html>
