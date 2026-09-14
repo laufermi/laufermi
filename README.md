@@ -1,5 +1,7 @@
 🔔 Do one thing and do it well!
 
+[TOC]
+
 ## Methodologies
 - [Manifesto for Agile Software Development](https://agilemanifesto.org/iso/en/manifesto.html)
 - [Continuous Delivery](https://martinfowler.com/bliki/ContinuousDelivery.html)
